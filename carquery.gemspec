@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Carquery::VERSION
   spec.authors       = ["Rustam Sharshenov"]
   spec.email         = ["rustam@sharshenov.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{www.carqueryapi.com API client}
+  spec.summary       = %q{Provides DSL for a www.carqueryapi.com API.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
