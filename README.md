@@ -1,6 +1,6 @@
 # Carquery
 
-TODO: Write a gem description
+Provides DSL for a [www.carqueryapi.com](http://www.carqueryapi.com) API. Read more about carqueryapi.com [here](http://www.carqueryapi.com/about/)
 
 ## Installation
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Get car makes
+
+    Carquery.get_makes year: 2009
+
+Get car model list by make
+
+    Carquery.get_models_for 'volvo'
+
+Get car model trim list
+
+    Carquery.get_trims
+
+Get car model trim by id
+
+    Carquery.get_trim 12345
+
+Get range of available years from the CarQuery database
+
+    Carquery.get_years_range
+
 
 ## Contributing
 
