@@ -2,7 +2,8 @@ module Carquery
   CarModel = BaseStruct.new :title do
 
     def self.build raw
-      new raw['model_name']
+      title = get_str raw['model_name']
+      new title
     end
   end
 end

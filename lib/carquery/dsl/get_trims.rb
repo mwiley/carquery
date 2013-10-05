@@ -3,7 +3,6 @@ module Carquery
   class << self
 
     # Returns trim data for models meeting specified criteria.
-    # Input: auto make code
     # Optional params:
     #   @make             - Make code
     #   @model            - Model Name

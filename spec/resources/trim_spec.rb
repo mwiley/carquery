@@ -28,8 +28,8 @@ describe Carquery::Trim do
       its(:engine_stroke_mm)     { should eq 89.0 }
       its(:engine_compression)   { should eq 10.8 }
       its(:engine_fuel)          { should eq "Gasoline" }
-      its(:top_speed_kph)        { should eq nil }
-      its(:speedup_0_to_100_kph) { should eq nil }
+      its(:top_speed_kph)        { should be_nil }
+      its(:speedup_0_to_100_kph) { should be_nil }
       its(:drive)                { should eq "Front" }
       its(:transmission_type)    { should eq "CVT" }
       its(:seats)                { should eq 5 }
@@ -40,11 +40,11 @@ describe Carquery::Trim do
       its(:height_mm)            { should eq 1412 }
       its(:wheelbase_mm)         { should eq 2670 }
       its(:lkm_hwy)              { should eq 4.8 }
-      its(:lkm_mixed)            { should eq nil }
+      its(:lkm_mixed)            { should be_nil }
       its(:lkm_city)             { should eq 5.0 }
       its(:fuel_cap_l)           { should eq 50 }
-      its(:sold_in_us)           { should eq 1 }
-      its(:co2)                  { should eq nil }
+      its(:sold_in_us)           { should eq true }
+      its(:co2)                  { should be_nil }
       its(:make_title)           { should eq "Acura" }
       its(:make_country)         { should eq "USA" }
 
