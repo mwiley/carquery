@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3?cmd=getModels&make=ford
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 12:40:53 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      Location:
+      - http://www.carqueryapi.com/api/0.3/?cmd=getModels&make=ford
+      Content-Length:
+      - '352'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://www.carqueryapi.com/api/0.3/?cmd=getModels&amp;make=ford">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (EL) Server at www.carqueryapi.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 12:34:27 GMT
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3/?cmd=getModels&make=ford
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 12:40:54 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      X-Powered-By:
+      - PHP/5.2.17
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "\r\n{\"Models\":[{\"model_name\":\"021 C\",\"model_make_id\":\"ford\"},{\"model_name\":\"12
+        M\",\"model_make_id\":\"ford\"},{\"model_name\":\"17\",\"model_make_id\":\"ford\"},{\"model_name\":\"17M\",\"model_make_id\":\"ford\"},{\"model_name\":\"2000\",\"model_make_id\":\"ford\"},{\"model_name\":\"24.7\",\"model_make_id\":\"ford\"},{\"model_name\":\"427\",\"model_make_id\":\"ford\"},{\"model_name\":\"49\",\"model_make_id\":\"ford\"},{\"model_name\":\"Aerostar\",\"model_make_id\":\"ford\"},{\"model_name\":\"Anglia\",\"model_make_id\":\"ford\"},{\"model_name\":\"Artic\",\"model_make_id\":\"ford\"},{\"model_name\":\"Aspire\",\"model_make_id\":\"ford\"},{\"model_name\":\"Bantam\",\"model_make_id\":\"ford\"},{\"model_name\":\"Bronco\",\"model_make_id\":\"ford\"},{\"model_name\":\"Bronco
+        II\",\"model_make_id\":\"ford\"},{\"model_name\":\"C 100\",\"model_make_id\":\"ford\"},{\"model_name\":\"C-MAX\",\"model_make_id\":\"ford\"},{\"model_name\":\"Capri\",\"model_make_id\":\"ford\"},{\"model_name\":\"Coin\",\"model_make_id\":\"ford\"},{\"model_name\":\"Consul\",\"model_make_id\":\"ford\"},{\"model_name\":\"Contour\",\"model_make_id\":\"ford\"},{\"model_name\":\"Corsair\",\"model_make_id\":\"ford\"},{\"model_name\":\"Cortina\",\"model_make_id\":\"ford\"},{\"model_name\":\"Cougar\",\"model_make_id\":\"ford\"},{\"model_name\":\"Courier\",\"model_make_id\":\"ford\"},{\"model_name\":\"Crestline\",\"model_make_id\":\"ford\"},{\"model_name\":\"Crown
+        Victoria\",\"model_make_id\":\"ford\"},{\"model_name\":\"Custom\",\"model_make_id\":\"ford\"},{\"model_name\":\"Desert
+        Excursion\",\"model_make_id\":\"ford\"},{\"model_name\":\"E-150\",\"model_make_id\":\"ford\"},{\"model_name\":\"E-250\",\"model_make_id\":\"ford\"},{\"model_name\":\"E-350\",\"model_make_id\":\"ford\"},{\"model_name\":\"e-Ka\",\"model_make_id\":\"ford\"},{\"model_name\":\"E-Series\",\"model_make_id\":\"ford\"},{\"model_name\":\"Econoline\",\"model_make_id\":\"ford\"},{\"model_name\":\"Econovan\",\"model_make_id\":\"ford\"},{\"model_name\":\"Ecosport\",\"model_make_id\":\"ford\"},{\"model_name\":\"Edge\",\"model_make_id\":\"ford\"},{\"model_name\":\"Equator\",\"model_make_id\":\"ford\"},{\"model_name\":\"Escape\",\"model_make_id\":\"ford\"},{\"model_name\":\"Escort\",\"model_make_id\":\"ford\"},{\"model_name\":\"EX\",\"model_make_id\":\"ford\"},{\"model_name\":\"Excursion\",\"model_make_id\":\"ford\"},{\"model_name\":\"Expedition\",\"model_make_id\":\"ford\"},{\"model_name\":\"Explorer\",\"model_make_id\":\"ford\"},{\"model_name\":\"Extreme
+        EX\",\"model_make_id\":\"ford\"},{\"model_name\":\"F\",\"model_make_id\":\"ford\"},{\"model_name\":\"F-150\",\"model_make_id\":\"ford\"},{\"model_name\":\"F-250\",\"model_make_id\":\"ford\"},{\"model_name\":\"F-350\",\"model_make_id\":\"ford\"},{\"model_name\":\"F-450\",\"model_make_id\":\"ford\"},{\"model_name\":\"F-650\",\"model_make_id\":\"ford\"},{\"model_name\":\"Fairlane\",\"model_make_id\":\"ford\"},{\"model_name\":\"Falcon\",\"model_make_id\":\"ford\"},{\"model_name\":\"Festiva\",\"model_make_id\":\"ford\"},{\"model_name\":\"Fiesta\",\"model_make_id\":\"ford\"},{\"model_name\":\"Five
+        Hundred\",\"model_make_id\":\"ford\"},{\"model_name\":\"Flex\",\"model_make_id\":\"ford\"},{\"model_name\":\"Focus\",\"model_make_id\":\"ford\"},{\"model_name\":\"FPV
+        BF GT\",\"model_make_id\":\"ford\"},{\"model_name\":\"Freestar\",\"model_make_id\":\"ford\"},{\"model_name\":\"Freestyle\",\"model_make_id\":\"ford\"},{\"model_name\":\"Fusion\",\"model_make_id\":\"ford\"},{\"model_name\":\"Galaxie\",\"model_make_id\":\"ford\"},{\"model_name\":\"Galaxy\",\"model_make_id\":\"ford\"},{\"model_name\":\"Gran
+        Torino\",\"model_make_id\":\"ford\"},{\"model_name\":\"Granada\",\"model_make_id\":\"ford\"},{\"model_name\":\"GT\",\"model_make_id\":\"ford\"},{\"model_name\":\"GT
+        40\",\"model_make_id\":\"ford\"},{\"model_name\":\"GT 500\",\"model_make_id\":\"ford\"},{\"model_name\":\"GT
+        70\",\"model_make_id\":\"ford\"},{\"model_name\":\"Husky\",\"model_make_id\":\"ford\"},{\"model_name\":\"Ikon\",\"model_make_id\":\"ford\"},{\"model_name\":\"Indigo\",\"model_make_id\":\"ford\"},{\"model_name\":\"Ka\",\"model_make_id\":\"ford\"},{\"model_name\":\"Kuga\",\"model_make_id\":\"ford\"},{\"model_name\":\"Laser\",\"model_make_id\":\"ford\"},{\"model_name\":\"Libre\",\"model_make_id\":\"ford\"},{\"model_name\":\"Limited\",\"model_make_id\":\"ford\"},{\"model_name\":\"Lotus
+        Cortina\",\"model_make_id\":\"ford\"},{\"model_name\":\"LTD\",\"model_make_id\":\"ford\"},{\"model_name\":\"Lynx\",\"model_make_id\":\"ford\"},{\"model_name\":\"Maverick\",\"model_make_id\":\"ford\"},{\"model_name\":\"Megastar
+        II\",\"model_make_id\":\"ford\"},{\"model_name\":\"Meteor\",\"model_make_id\":\"ford\"},{\"model_name\":\"Model
+        U\",\"model_make_id\":\"ford\"},{\"model_name\":\"Monarch\",\"model_make_id\":\"ford\"},{\"model_name\":\"Mondeo\",\"model_make_id\":\"ford\"},{\"model_name\":\"Mustang\",\"model_make_id\":\"ford\"},{\"model_name\":\"O21
+        C\",\"model_make_id\":\"ford\"},{\"model_name\":\"Orion\",\"model_make_id\":\"ford\"},{\"model_name\":\"Pilot\",\"model_make_id\":\"ford\"},{\"model_name\":\"Popular\",\"model_make_id\":\"ford\"},{\"model_name\":\"Prefect\",\"model_make_id\":\"ford\"},{\"model_name\":\"Probe\",\"model_make_id\":\"ford\"},{\"model_name\":\"Puma\",\"model_make_id\":\"ford\"},{\"model_name\":\"Ranchero\",\"model_make_id\":\"ford\"},{\"model_name\":\"Ranger\",\"model_make_id\":\"ford\"},{\"model_name\":\"Royale\",\"model_make_id\":\"ford\"},{\"model_name\":\"RS
+        200\",\"model_make_id\":\"ford\"},{\"model_name\":\"S-Max\",\"model_make_id\":\"ford\"},{\"model_name\":\"Saetta\",\"model_make_id\":\"ford\"},{\"model_name\":\"Scorpio\",\"model_make_id\":\"ford\"},{\"model_name\":\"Shelby
+        GR-1 Concept\",\"model_make_id\":\"ford\"},{\"model_name\":\"Shelby GT 500\",\"model_make_id\":\"ford\"},{\"model_name\":\"Shelby
+        GT500\",\"model_make_id\":\"ford\"},{\"model_name\":\"Sierra\",\"model_make_id\":\"ford\"},{\"model_name\":\"Skyliner\",\"model_make_id\":\"ford\"},{\"model_name\":\"ST
+        460\",\"model_make_id\":\"ford\"},{\"model_name\":\"Station Wagon\",\"model_make_id\":\"ford\"},{\"model_name\":\"Synergy
+        2010\",\"model_make_id\":\"ford\"},{\"model_name\":\"Taunus\",\"model_make_id\":\"ford\"},{\"model_name\":\"Taurus\",\"model_make_id\":\"ford\"},{\"model_name\":\"Taurus
+        X\",\"model_make_id\":\"ford\"},{\"model_name\":\"TE-50\",\"model_make_id\":\"ford\"},{\"model_name\":\"Telstar\",\"model_make_id\":\"ford\"},{\"model_name\":\"Tempo\",\"model_make_id\":\"ford\"},{\"model_name\":\"Territory\",\"model_make_id\":\"ford\"},{\"model_name\":\"Think\",\"model_make_id\":\"ford\"},{\"model_name\":\"Think
+        Neighbor\",\"model_make_id\":\"ford\"},{\"model_name\":\"Thunderbird\",\"model_make_id\":\"ford\"},{\"model_name\":\"TL-50\",\"model_make_id\":\"ford\"},{\"model_name\":\"Tonka\",\"model_make_id\":\"ford\"},{\"model_name\":\"Torino\",\"model_make_id\":\"ford\"},{\"model_name\":\"Tracer\",\"model_make_id\":\"ford\"},{\"model_name\":\"Transit
+        Connect\",\"model_make_id\":\"ford\"},{\"model_name\":\"Triton\",\"model_make_id\":\"ford\"},{\"model_name\":\"TS-50\",\"model_make_id\":\"ford\"},{\"model_name\":\"Urban
+        Explorer\",\"model_make_id\":\"ford\"},{\"model_name\":\"Vedette\",\"model_make_id\":\"ford\"},{\"model_name\":\"Versailles\",\"model_make_id\":\"ford\"},{\"model_name\":\"Windstar\",\"model_make_id\":\"ford\"},{\"model_name\":\"XR
+        8 Xplod\",\"model_make_id\":\"ford\"},{\"model_name\":\"Zephyr\",\"model_make_id\":\"ford\"},{\"model_name\":\"Zodiac\",\"model_make_id\":\"ford\"}]}"
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 12:34:28 GMT
+recorded_with: VCR 2.6.0
