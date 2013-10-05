@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3?cmd=getYears
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 13:15:01 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      Location:
+      - http://www.carqueryapi.com/api/0.3/?cmd=getYears
+      Content-Length:
+      - '337'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://www.carqueryapi.com/api/0.3/?cmd=getYears">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (EL) Server at www.carqueryapi.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 13:08:35 GMT
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3/?cmd=getYears
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 13:15:02 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      X-Powered-By:
+      - PHP/5.2.17
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "\r\n{ \"Years\": {\"min_year\":\"1940\", \"max_year\":\"2013\"} }"
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 13:08:35 GMT
+recorded_with: VCR 2.6.0
