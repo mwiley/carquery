@@ -10,8 +10,14 @@ module Carquery
     def request cmd, params={}
       params.merge! cmd: cmd
       response = HTTParty.get _build_url(params)
-      raise RequestError, response["error"] if response.has_key? "error"
-      response.parsed_response
+
+      if cmd == 'getModel'
+        raise RequestError, "Not found" unless response.first.has_key? "model_id"
+        response.parsed_response.first
+      else
+        raise RequestError, response["error"] if response.has_key? "error"
+        response.parsed_response
+      end
     end
 
     def _build_url params={}

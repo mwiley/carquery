@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3?cmd=getModel&model=1923123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 17:12:25 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      Location:
+      - http://www.carqueryapi.com/api/0.3/?cmd=getModel&model=1923123
+      Content-Length:
+      - '355'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=iso-8859-1
+      X-Pad:
+      - avoid browser bug
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://www.carqueryapi.com/api/0.3/?cmd=getModel&amp;model=1923123">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (EL) Server at www.carqueryapi.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 17:05:59 GMT
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3/?cmd=getModel&model=1923123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 17:12:26 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      X-Powered-By:
+      - PHP/5.2.17
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "\r\n[{\"ExtColors\":[],\"IntColors\":[]}]"
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 17:06:00 GMT
+recorded_with: VCR 2.6.0

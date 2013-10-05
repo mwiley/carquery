@@ -32,7 +32,7 @@ module Carquery
     #   @sold_in_us       - 1(sold in US), 0(not sold in US)
     #   @year             - Model Year
     # Usage:
-    #   Carquery.get_trims 'volvo', year: 2010 => [#<struct Carquery::CarModel title="120">, ...]
+    #   Carquery.get_trims 'volvo', year: 2010 => [#<struct Carquery::Trim id=12343, title="Tempra", make_code="fiat", ...>, ...]
     # Notes:
     #   Results are sorted by year, make, model, and trim. Results are limited to 500 records.
     def get_trims params={}

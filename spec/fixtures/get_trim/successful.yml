@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3?cmd=getModel&model=57610
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 17:12:24 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      Location:
+      - http://www.carqueryapi.com/api/0.3/?cmd=getModel&model=57610
+      Content-Length:
+      - '353'
+      Connection:
+      - close
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://www.carqueryapi.com/api/0.3/?cmd=getModel&amp;model=57610">here</a>.</p>
+        <hr>
+        <address>Apache/2.2.22 (EL) Server at www.carqueryapi.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 17:05:58 GMT
+- request:
+    method: get
+    uri: http://www.carqueryapi.com/api/0.3/?cmd=getModel&model=57610
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 05 Oct 2013 17:12:25 GMT
+      Server:
+      - Apache/2.2.22 (EL)
+      X-Powered-By:
+      - PHP/5.2.17
+      Connection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: "\r\n[{\"model_id\":\"57610\",\"model_make_id\":\"acura\",\"model_name\":\"ILX\",\"model_trim\":\"
+        Hybrid\",\"model_year\":\"2013\",\"model_body\":\"Sedan\",\"model_engine_position\":\"Front\",\"model_engine_cc\":\"1500\",\"model_engine_cyl\":\"4\",\"model_engine_type\":\"in-line\",\"model_engine_valves_per_cyl\":\"8\",\"model_engine_power_ps\":\"111\",\"model_engine_power_rpm\":\"5500\",\"model_engine_torque_nm\":\"172\",\"model_engine_torque_rpm\":\"3500\",\"model_engine_bore_mm\":\"73.0\",\"model_engine_stroke_mm\":\"89.0\",\"model_engine_compression\":\"10.8\",\"model_engine_fuel\":\"Gasoline\",\"model_top_speed_kph\":null,\"model_0_to_100_kph\":null,\"model_drive\":\"Front\",\"model_transmission_type\":\"CVT
+        \",\"model_seats\":\"5\",\"model_doors\":\"4\",\"model_weight_kg\":\"1356\",\"model_length_mm\":\"4550\",\"model_width_mm\":\"1794\",\"model_height_mm\":\"1412\",\"model_wheelbase_mm\":\"2670\",\"model_lkm_hwy\":\"4.8\",\"model_lkm_mixed\":null,\"model_lkm_city\":\"5.0\",\"model_fuel_cap_l\":\"50\",\"model_sold_in_us\":\"1\",\"model_co2\":null,\"model_make_display\":null,\"model_engine_l\":\"1.5\",\"model_engine_ci\":\"92\",\"model_engine_bore_in\":\"2.87\",\"model_engine_stroke_in\":\"3.50\",\"model_engine_valves\":\"32\",\"model_engine_power_hp\":\"109\",\"model_engine_power_kw\":\"82\",\"model_engine_torque_lbft\":\"127\",\"model_engine_torque_kgm\":\"18\",\"model_top_speed_mph\":null,\"model_weight_lbs\":\"2989\",\"model_length_in\":\"179.1\",\"model_width_in\":\"70.6\",\"model_height_in\":\"55.6\",\"model_wheelbase_in\":\"105.1\",\"model_mpg_hwy\":\"49\",\"model_mpg_city\":\"47\",\"model_mpg_mixed\":null,\"model_fuel_cap_g\":\"13.2\",\"make_display\":\"Acura\",\"make_country\":\"USA\",\"ExtColors\":[],\"IntColors\":[]}]"
+    http_version: 
+  recorded_at: Sat, 05 Oct 2013 17:05:59 GMT
+recorded_with: VCR 2.6.0
