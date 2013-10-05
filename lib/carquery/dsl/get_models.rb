@@ -4,7 +4,7 @@ module Carquery
 
     # Returns car models by the manufacturer
     # Input: auto make code
-    # Additional params:
+    # Optional params:
     #   @year       [optional]  - omitting it will retrieve all model names ever produced by the manufacturer.
     #   @sold_in_us [optional]  - setting it to “1″ will restrict results to models sold in the USA.
     #   @body       [optional]  - including it will restrict results to models of the specified body type (SUV, Sedan, etc)
