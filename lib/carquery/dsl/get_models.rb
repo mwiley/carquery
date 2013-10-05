@@ -9,7 +9,7 @@ module Carquery
     #   @sold_in_us [optional]  - setting it to “1″ will restrict results to models sold in the USA.
     #   @body       [optional]  - including it will restrict results to models of the specified body type (SUV, Sedan, etc)
     # Usage:
-    #   Carquery.get_models_for 'volvo', year: 2010 => [{:title=>"C30"}, {:title=>"C70"}, {:title=>"S40"}, ...]
+    #   Carquery.get_models_for 'volvo', year: 2010 => [#<struct Carquery::CarModel title="120">, ...]
     def get_models make_code, params={}
       params.merge! make: make_code
       response = request 'getModels', params
