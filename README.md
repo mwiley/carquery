@@ -1,6 +1,6 @@
 # Carquery
 
-Provides DSL for a [www.carqueryapi.com](http://www.carqueryapi.com) API. Read more about carqueryapi.com [here](http://www.carqueryapi.com/about/)
+Provides DSL for a [www.carqueryapi.com](http://www.carqueryapi.com) API. Read more about CarQuery database API [here](http://www.carqueryapi.com/about/)
 
 ## Installation
 
