@@ -5,7 +5,8 @@ module Carquery
                         :engine_bore_mm, :engine_stroke_mm, :engine_compression, :engine_fuel,
                         :top_speed_kph, :speedup_0_to_100_kph, :drive, :transmission_type,
                         :seats, :doors, :weight_kg, :length_mm, :width_mm, :height_mm,
-                        :wheelbase_mm, :lkm_hwy, :lkm_mixed, :lkm_city, :fuel_cap_l, :sold_in_us,
+                        :wheelbase_mm, :lkm_hwy, :lkm_mixed, :lkm_city, :fuel_cap_l,
+                        :mpg_city, :mpg_hwy, :mpg_mixed, :fuel_cap_g, :sold_in_us,
                         :co2, :make_title, :make_country do
 
     def self.build raw
@@ -43,6 +44,10 @@ module Carquery
       lkm_mixed =             get_f   raw["model_lkm_mixed"]
       lkm_city =              get_f   raw["model_lkm_city"]
       fuel_cap_l =            get_i   raw["model_fuel_cap_l"]
+      mpg_hwy =               get_f   raw["model_mpg_hwy"]
+      mpg_city =              get_f   raw["model_mpg_city"]
+      mpg_mixed =             get_f   raw["model_mpg_mixed"]
+      fuel_cap_g =            get_f   raw["model_fuel_cap_g"]
       sold_in_us =            get_boolean raw["model_sold_in_us"]
       co2 =                   get_i   raw["model_co2"]
       make_title =            get_str raw["make_display"]
@@ -54,9 +59,8 @@ module Carquery
           engine_stroke_mm, engine_compression, engine_fuel, top_speed_kph,
           speedup_0_to_100_kph, drive, transmission_type, seats, doors, weight_kg,
           length_mm, width_mm, height_mm, wheelbase_mm, lkm_hwy, lkm_mixed, lkm_city,
-          fuel_cap_l, sold_in_us, co2, make_title, make_country
+          fuel_cap_l, mpg_city, mpg_hwy, mpg_mixed, fuel_cap_g, sold_in_us, co2,
+          make_title, make_country
     end
   end
 end
-
-
