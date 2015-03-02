@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'rspec/its'
 
 describe Carquery::CarModel do
   describe '.build' do
