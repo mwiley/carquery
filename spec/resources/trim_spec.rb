@@ -28,21 +28,21 @@ describe Carquery::Trim do
       its(:engine_bore_mm)       { should eq 73.0 }
       its(:engine_stroke_mm)     { should eq 89.0 }
       its(:engine_compression)   { should eq 10.8 }
-      its(:model_engine_l)       { should eq 1.5 }
-      its(:model_engine_ci)      { should eq 92 }
-      its(:model_engine_bore_in) { should eq 2.87 }
-      its(:model_engine_stroke_in){ should eq 3.5  }
-      its(:model_engine_valves)  { should eq 32 }
-      its(:model_engine_power_hp){ should eq 109}
-      its(:model_engine_power_kw){ should eq 82 }
-      its(:model_engine_torque_lbft){ should eq 127 }
-      its(:model_engine_torque_kgm){ should eq 18 }
-      its(:model_top_speed_mph)  { should be_nil }
-      its(:model_weight_lbs)     { should eq 2989 }
-      its(:model_length_in)      { should eq 179.1 }
-      its(:model_width_in)       { should eq 70.6 }
-      its(:model_height_in)      { should eq 55.6 }
-      its(:model_wheelbase_in)   { should eq 105.1 }
+      its(:engine_l)             { should eq 1.5 }
+      its(:engine_ci)            { should eq 92 }
+      its(:engine_bore_in)       { should eq 2.87 }
+      its(:engine_stroke_in)     { should eq 3.5  }
+      its(:engine_valves)        { should eq 32 }
+      its(:engine_power_hp)      { should eq 109}
+      its(:engine_power_kw)      { should eq 82 }
+      its(:engine_torque_lbft)   { should eq 127 }
+      its(:engine_torque_kgm)    { should eq 18 }
+      its(:top_speed_mph)        { should be_nil }
+      its(:weight_lbs)           { should eq 2989 }
+      its(:length_in)            { should eq 179.1 }
+      its(:width_in)             { should eq 70.6 }
+      its(:height_in)            { should eq 55.6 }
+      its(:wheelbase_in)         { should eq 105.1 }
       its(:engine_fuel)          { should eq "Gasoline" }
       its(:top_speed_kph)        { should be_nil }
       its(:speedup_0_to_100_kph) { should be_nil }
