@@ -6,8 +6,8 @@ require 'carquery/version'
 Gem::Specification.new do |spec|
   spec.name          = "carquery"
   spec.version       = Carquery::VERSION
-  spec.authors       = ["Rustam Sharshenov"]
-  spec.email         = ["rustam@sharshenov.com"]
+  spec.authors       = ["Mason Wiley", "Rustam Sharshenov"]
+  spec.email         = ["masonwiley92@gmail.com", "rustam@sharshenov.com"]
   spec.description   = %q{www.carqueryapi.com API client}
   spec.summary       = %q{Provides DSL for a www.carqueryapi.com API.}
   spec.homepage      = ""
